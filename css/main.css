@@ -8887,6 +8887,20 @@ p {
 .section2 .vacancy-list .vacancy-list-item .vacancy .status {
   font-size: 0.75rem;
 }
+.section2 .job-title {
+  border-bottom: 1px solid transparent;
+  -webkit-transition: border-bottom-color 0.4s ease-in;
+  -moz-transition: border-bottom-color 0.4s ease-in;
+  -ms-transition: border-bottom-color 0.4s ease-in;
+  -o-transition: border-bottom-color 0.4s ease-in;
+  transition: border-bottom-color 0.4s ease-in;
+}
+.section2 .job-title:hover {
+  color: #fff;
+  border-bottom: 1px solid #efefef;
+  text-shadow: 2px 2px #43094b;
+  cursor: pointer;
+}
 .section2 .job-title.active + .job-description {
   visibility: visible;
   top: 0;
@@ -8951,6 +8965,10 @@ p {
 .section2 .job-title.active + .job-description .description-body .description-list li {
   font-size: 0.9375rem;
   font-weight: 100;
+}
+.section2 .job-title.active + .job-description .description-body .row {
+  margin-left: 0;
+  margin-right: 0;
 }
 .section2 .job-description {
   width: 100%;

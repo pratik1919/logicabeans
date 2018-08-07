@@ -57,6 +57,22 @@
     }
 
 	.job-title {
+      border-bottom: 1px solid transparent;
+
+      -webkit-transition: border-bottom-color 0.4s ease-in;
+      -moz-transition: border-bottom-color 0.4s ease-in;
+      -ms-transition: border-bottom-color 0.4s ease-in;
+      -o-transition: border-bottom-color 0.4s ease-in;
+      transition: border-bottom-color 0.4s ease-in;
+
+      &:hover {
+        color: #fff;
+        border-bottom: 1px solid #efefef;
+        text-shadow: 2px 2px rgb(67, 9, 75);
+        cursor: pointer;
+
+      }
+
 		&.active {
 			& + .job-description {
 				visibility: visible;
@@ -125,6 +141,10 @@
 							font-weight: 100;
 						}
 
+					}
+					& .row {
+						margin-left: 0;
+						margin-right: 0;
 					}
 				}
 
