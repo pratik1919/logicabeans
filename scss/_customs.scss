@@ -1,0 +1,66 @@
+h1,
+h2,
+h3 {
+    font-family: 'Poppins', sans-serif; // font-family: 'Nunito Sans', sans-serif;
+    color: #000;
+}
+
+p {
+    font-family: 'Nunito', sans-serif;
+}
+
+.sec-header {
+    position: relative;
+
+    h1 {
+        font-size: 2rem;
+        display: inline-block;
+        position: relative;
+        letter-spacing: 1px;
+
+        &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -20px;
+            width: 50%;
+            height: 1px;
+            background-color: $primary;
+        }
+    }
+
+    .title {
+        &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -20px;
+            width: 50%;
+            height: 1px;
+            background-color: $primary;
+        }
+    }
+
+    &.text-center {
+        h1 {
+            &:before {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+
+        .title {
+            &:before {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+    }
+
+}
+
+.sub-title {
+	font-weight: 300;
+	font-size: 22px;
+	color: #444;
+}

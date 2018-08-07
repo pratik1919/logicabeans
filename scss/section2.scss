@@ -1,0 +1,147 @@
+.section2 {
+	margin-top: -100px;
+	position: relative;
+	z-index: 999;
+
+	.content-wrapper {
+		background-color: $primary;
+		// box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		-webkit-box-shadow: 0px 0px 62px 0px rgba(0,0,0,0.15);
+		-moz-box-shadow: 0px 0px 62px 0px rgba(0,0,0,0.15);
+		box-shadow: 0px 0px 62px 0px rgba(0,0,0,0.15);
+	}
+
+	.sec-header {
+
+        h1 {
+            &:before {
+                background-color: #fff;
+            }
+        }
+    }
+
+    .vacancy-list {
+
+    	.vacancy-list-item {
+
+    		// &:nth-child(even) {
+	    	// 	.d-flex {
+	    	// 		justify-content: flex-end;
+	    	// 	}
+	    	// }
+			position: static;
+	    	
+
+			.vacancy {
+
+		    	a {
+		    		color: #fff;
+		    	}
+
+		    	& > i {
+		    		margin-top: -4px;
+		    	}
+
+		    	.vacancy-title {
+		    		font-size: 1rem;
+		    		font-weight: 400;
+		    	}
+		    	.status {
+		    		font-size: 0.75rem;
+		    	}
+
+		    	
+
+		    }
+    	}
+    }
+
+	.job-title {
+		&.active {
+			& + .job-description {
+				visibility: visible;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: auto;
+				background: #efefef;
+				color: #893e85;
+				-webkit-box-shadow: 0px 8px 23px 0px rgba(138,47,133,1);
+				-moz-box-shadow: 0px 8px 23px 0px rgba(138,47,133,1);
+				box-shadow: 0px 8px 23px 0px rgba(138,47,133,1);
+				background-image: url(../images/fade-slant.png);
+				background-repeat: no-repeat;
+				background-size: cover;
+				background-position: bottom right;
+				.description-header {
+					color: inherit;
+					margin-bottom: 60px;
+					text-align: center;
+					.vacancy-title {
+						font-size: 16px;
+						font-width: 600;
+					}
+
+					.status {
+						color: inherit;
+						justify-content: center;
+					}
+
+					.title {
+						&:before{
+							background: #893e85;
+						}
+					}
+
+					.close-icon {
+						position: absolute;
+						top: 0;
+						right: 0;
+						color: inherit;
+						font-size: 20px;
+					}
+				}
+
+				.description-body {
+					color: inherit;
+					padding-bottom: 15px;
+					.description-title {
+						text-transform: capitalize;
+						padding-left: 15px;
+						font-weight: 600;
+
+						.fa {
+							margin-right: 15px;
+						}
+					}
+
+					.description-list {
+						color: inherit;
+						padding-left: 30px;
+						list-style: circle;
+
+						li {
+							font-size: 0.9375rem;
+							font-weight: 100;
+						}
+
+					}
+				}
+
+				-webkit-transition: all 0.4s ease-in-out;
+				-moz-transition: all 0.4s ease-in-out;
+				-ms-transition: all 0.4s ease-in-out;
+				-o-transition: all 0.4s ease-in-out;
+				transition: all 0.4s ease-in-out;
+			}
+		}
+	}
+
+	.job-description {
+		width: 100%;
+		visibility: hidden;
+		height:0;
+		position: absolute;
+	}
+    
+}
