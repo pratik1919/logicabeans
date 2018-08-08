@@ -8767,6 +8767,11 @@ p {
   color: rgba(0, 0, 0, 0.3);
   border-color: rgba(0, 0, 0, 0.1);
 }
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .navbar .container {
+    max-width: 100%;
+  }
+}
 
 .navbar-toggler:focus {
   outline: none;
@@ -8789,7 +8794,7 @@ p {
 .is-sticky .navbar .nav-item .nav-link.active, .is-sticky .navbar .nav-item .nav-link:hover {
   color: white;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .is-sticky .navbar .nav-item .nav-link.active, .is-sticky .navbar .nav-item .nav-link:hover {
     color: #8a3e86;
   }
@@ -8797,7 +8802,7 @@ p {
 .is-sticky .navbar-light .navbar-nav .nav-link {
   color: rgba(255, 255, 255, 0.9);
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .is-sticky .navbar-light .navbar-nav .nav-link {
     color: rgba(0, 0, 0, 0.7);
   }
@@ -8971,7 +8976,6 @@ p {
   margin-right: 0;
 }
 .section2 .job-description {
-  width: 100%;
   visibility: hidden;
   height: 0;
   position: absolute;

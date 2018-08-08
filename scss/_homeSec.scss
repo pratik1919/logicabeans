@@ -103,18 +103,6 @@
     }
 
     .navbar-collapse {
-        // &.collapse {
-        //     &.show {
-        //         background-color: #fff;
-        //         z-index: 99;
-        //         padding: 15px;
-        //         .nav-item {
-        //             .nav-link {
-        //                 color: rgba(138, 62, 134, 0.9);
-        //             }
-        //         }
-        //     }
-        // }
         background-color: #8a3e86;
         z-index: 999;
         padding: 1rem;
@@ -144,6 +132,12 @@
         .navbar-toggler {
             color: rgba(0, 0, 0, 0.3);
             border-color: rgba(0, 0, 0, 0.1);
+        }
+    }
+
+    .container {
+        @media only screen and (min-width: 768px) and (max-width:992px) {
+            max-width: 100%;
         }
     }
 }
@@ -183,7 +177,7 @@
                     color: rgba(255, 255, 255, 1);
                 }
 
-                @media (min-width: 768px) {
+                @media (min-width: 992px) {
 
                     &.active,
                     &:hover {
@@ -199,7 +193,7 @@
             .nav-link {
                 color: rgba(255, 255, 255, 0.9);
 
-                @media (min-width: 768px) {
+                @media (min-width: 992px) {
                     color: rgba(0, 0, 0, 0.7);
                 }
             }
